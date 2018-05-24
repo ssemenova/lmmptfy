@@ -1,0 +1,20 @@
+<!doctype html>
+<center>
+<title>Let Me Man Page That For You</title>
+<h1>Let Me Man Page That For You</h1>
+
+{% if command %}
+<h3>Redirecting to ... cp</h3>
+<script>
+console.log("http://man.he.net/?topic={{ command }}&section=all")
+     window.setTimeout(function(){
+       // Move to a new location or you can do something else
+       window.location.href = "http://man.he.net/?topic={{ command }}&section=all";
+       }, 5000);
+
+</script>
+{% endif %}
+
+<h5 style="position: fixed; bottom:0"><b>Usage: </b>lmmptfy.xyz/command</h5>
+
+</center>
